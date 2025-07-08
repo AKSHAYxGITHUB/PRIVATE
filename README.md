@@ -6,3 +6,7 @@ git clone https://github.com/AKSHAYxGITHUB/PRIVATE.git
 cd private
 run.bat
 ```
+
+
+OWNED BY : https://github.com/AKSHAYxGITHUB
+CONTACT ID : https://t.me/LUTTAPPIXBOT
