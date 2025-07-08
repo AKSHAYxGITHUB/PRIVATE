@@ -9,8 +9,10 @@ def run():
   a=int(input("Enter your choice :") )
   if a==1:
     hello.hello()
+    run()
   elif a==2:
     qrgen.qrgen()
+    run()
   elif a==3:
     exit()
   else:
