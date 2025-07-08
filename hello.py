@@ -1,4 +1,4 @@
-import main
+from main import *
 def hello():
   print("HI HH  HH")
-  main.run()
+  run()
