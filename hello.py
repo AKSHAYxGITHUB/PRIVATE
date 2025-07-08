@@ -1,1 +1,1 @@
-PRINT("HI HH  HH")
+print("HI HH  HH")
