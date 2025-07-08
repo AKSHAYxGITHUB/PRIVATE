@@ -6,20 +6,13 @@ def run():
   2) qr generator
   3) exit
   """)
-  a=input("Enter your choice :") 
+  a=int(input("Enter your choice :") )
   if a==1:
-    hello()
+    hello.hello()
   elif a==2:
-    qrgen()
+    qrgen.qrgen()
   elif a==3:
     exit()
   else:
     run()
-  
-
-print("DO YOU WANT TO RUN ANY PROGRAMS ?")
-a=input("(y/n) :")
-if a=="y":
-  run()
-else :
-  exit()
+run()
