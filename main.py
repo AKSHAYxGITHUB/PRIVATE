@@ -1,19 +1,25 @@
-import hello,qrgen
+import hello,qrgen,whatsapp
 
 def run():
-  print("""Select the program that you want to run :
-  1) hello print
-  2) qr generator
-  3) exit
+  print("""
+=======================================================================================
+Select the program that you want to run :
+  1) Hello print
+  2) Qr generator
+  3) Whatsapp Message Sender
+  e) exit
   """)
-  a=int(input("Enter your choice :") )
-  if a==1:
+  a=input("Enter your choice :") 
+  if a=='1':
     hello.hello()
     run()
-  elif a==2:
+  elif a=='2':
     qrgen.qrgen()
     run()
-  elif a==3:
+  elif a=='3':
+    whatsapp.whatsapp()
+    run()
+  elif a=='e':
     exit()
   else:
     run()
