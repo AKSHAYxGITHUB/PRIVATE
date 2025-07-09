@@ -1,14 +1,14 @@
 import hello,qrgen,whatsapp
+from colorama import init, Fore, Style
 
 def run():
-  print("""
-=======================================================================================
-Select the program that you want to run :
-  1) Hello print
-  2) Qr generator
-  3) Whatsapp Message Sender
-  e) exit
-  """)
+  init(autoreset=True)
+  print("="*87)
+  print(Fore.YELLOW + "Select the program that you want to run :" + Style.RESET_ALL)
+  print(Fore.CYAN + "  1)" + Fore.GREEN + " Hello print")
+  print(Fore.CYAN + "  2)" + Fore.GREEN + " Qr generator")
+  print(Fore.CYAN + "  3)" + Fore.GREEN + " Whatsapp Message Sender")
+  print(Fore.CYAN + "  e)" + Fore.RED + " exit")
   a=input("Enter your choice :") 
   if a=='1':
     hello.hello()
