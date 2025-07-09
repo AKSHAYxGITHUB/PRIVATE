@@ -1,5 +1,6 @@
 import qrcode
 def qrgen():
-  img = qrcode.make("https://github.com/akshaydev")
+  a=input("Enter the link for creating qr code  :")
+  img = qrcode.make(a)
   img.save("my_qr.png")
-  print("QR code saved as my_qr.png")
+  print("QR CODE SAVED AS MY_QR.PNG ")
