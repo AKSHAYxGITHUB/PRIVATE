@@ -2,4 +2,4 @@ import pywhatkit as pwk
 def whatsapp():
   phone_number=input("Enter the phone number (only suuports indian numbers) :")
   message=input("Enter the message you whant to send :")
-  pwk.sendwhatmsg("+91"+phone_number,message,10, 30)
+  pwk.sendwhatmsg("+91"+phone_number,message,wait_time=10, tab_close=True)
