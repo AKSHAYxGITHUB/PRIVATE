@@ -3,7 +3,7 @@ from colorama import init, Fore, Style
 
 def run():
   init(autoreset=True)
-  print("="*87)
+  print(Fore.GREEN +"="*87)
   print(Fore.YELLOW + "Select the program that you want to run :" + Style.RESET_ALL)
   print(Fore.CYAN + "  1)" + Fore.GREEN + " Hello print")
   print(Fore.CYAN + "  2)" + Fore.GREEN + " Qr generator")
