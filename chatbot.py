@@ -21,11 +21,10 @@ def database():
     database()
   elif "help" in i:
     print("""
-          BOT :
-          I AM A SIMPLE (BETA) CHAT BOT 
-          I CAN HELP YOU WITH MY LIMTED POW
-          If you need : [qrcode generator type "qrgen"]
-                        [whatsapp message type "whatsapp"]
+BOT: I AM A SIMPLE (BETA) CHAT BOT 
+     I CAN HELP YOU WITH MY LIMTED POW
+     If you need : [qrcode generator type "qrgen"]
+                   [whatsapp message type "whatsapp"]
            """)
     database()
   else:
