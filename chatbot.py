@@ -1,6 +1,8 @@
 import qrgen,whatsapp
 def chatbot():
-  print("Welcome to Akshay's CHAT BOT ! ")
+  print("""BOT :Welcome to Akshay's CHAT BOT ! 
+  
+  """)
   database()
   
 def database():
@@ -14,11 +16,12 @@ def database():
   elif "whatsapp" in i:
     whatsapp.whatsapp()
     database()
-  elif "qrgen" in i:
+  elif "qrgen" or "qrcode" in i:
     qrgen.qrgen()
     database()
   elif "help" in i:
     print("""
+          BOT :
           I AM A SIMPLE (BETA) CHAT BOT 
           I CAN HELP YOU WITH MY LIMTED POW
           If you need : [qrcode generator type "qrgen"]
@@ -26,5 +29,6 @@ def database():
            """)
     database()
   else:
+    print("BOT: command not find !")
     database()
   
