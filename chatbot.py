@@ -16,14 +16,14 @@ def database():
   elif "whatsapp" in i:
     whatsapp.whatsapp()
     database()
-  elif "qrgen" or "qrcode" in i:
+  elif "qrcode" in i:
     qrgen.qrgen()
     database()
   elif "help" in i:
     print("""
 BOT: I AM A SIMPLE (BETA) CHAT BOT 
      I CAN HELP YOU WITH MY LIMTED POW
-     If you need : [qrcode generator type "qrgen"]
+     If you need : [qrcode generator type "qrcode"]
                    [whatsapp message type "whatsapp"]
            """)
     database()
