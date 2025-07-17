@@ -1,5 +1,7 @@
-print("Welcome to Akshay's CHAT BOT ! ")
-  i=input("user :")
+def chatbot():
+  print("Welcome to Akshay's CHAT BOT ! ")
+  database()
+  
 def database(i):
   i=input("user :")
   if "hi" in i.lower():
