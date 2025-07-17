@@ -2,7 +2,7 @@ def chatbot():
   print("Welcome to Akshay's CHAT BOT ! ")
   database()
   
-def database(i):
+def database():
   i=input("user :")
   if "hi" in i.lower():
     print("HELLO !")
