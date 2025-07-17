@@ -1,4 +1,4 @@
-import hello,qrgen,whatsapp
+import hello,qrgen,whatsapp,chatbot
 from colorama import init, Fore, Style
 
 def run():
@@ -8,6 +8,7 @@ def run():
   print(Fore.CYAN + "  1)" + Fore.GREEN + " Print any thing !")
   print(Fore.CYAN + "  2)" + Fore.GREEN + " Qr generator")
   print(Fore.CYAN + "  3)" + Fore.GREEN + " Whatsapp Message Sender")
+  print(Fore.CYAN + "  4)" + Fore.GREEN + " Chat BOT")
   print(Fore.CYAN + "  e)" + Fore.RED + " exit")
   a=input("Enter your choice :") 
   if a=='1':
@@ -18,6 +19,9 @@ def run():
     run()
   elif a=='3':
     whatsapp.whatsapp()
+    run()
+  elif a=="4":
+    chatbot.chatbot()
     run()
   elif a=='e':
     exit()
