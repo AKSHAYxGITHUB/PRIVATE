@@ -28,6 +28,6 @@ BOT: I AM A SIMPLE (BETA) CHAT BOT
            """)
     database()
   else:
-    print("BOT: command not find !")
+    print("BOT: Command not found !")
     database()
   
