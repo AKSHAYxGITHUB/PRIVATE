@@ -23,7 +23,7 @@ def database():
           I CAN HELP YOU WITH MY LIMTED POW
           If you need : [qrcode generator type "qrgen"]
                         [whatsapp message type "whatsapp"]
-           """
+           """)
     database()
   else:
     database()
