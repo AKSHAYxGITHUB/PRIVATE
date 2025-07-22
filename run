@@ -1,13 +1,28 @@
 #!/usr/bin/env bash
 
-# Detect platform
+echo "Starting setup..."
+
+# Detect OS type
 if [[ "$OSTYPE" == "msys" || "$OSTYPE" == "win32" ]]; then
-    echo "Running on Windows CMD"
+    echo "Detected Windows CMD"
     cmd.exe /c run.bat
 else
-    echo "Running on Termux/Linux"
+    echo "Detected Linux/Termux"
+
+    echo "Pulling latest updates from GitHub..."
     git pull origin main
-    pip install -r requirements.txt
+
+    echo "Installing Python packages..."
+    
+    # Ensure setuptools & pip are ready
+    pip install --upgrade pip setuptools wheel
+    
+    # Install requirements, ignore failures
+    pip install -r requirements.txt || {
+        echo "Failed to install from requirements.txt. Trying manual install..."
+        pip install pillow qrcode pywhatkit wikipedia colorama requests
+    }
+
+    echo "Running the Python script..."
     python main.py
 fi
-
