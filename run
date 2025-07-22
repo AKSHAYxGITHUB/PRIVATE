@@ -8,8 +8,9 @@ if [[ "$OSTYPE" == "msys" || "$OSTYPE" == "win32" ]]; then
     cmd.exe /c run.bat
 else
     echo "Detected Linux/Termux"
-
     echo "Pulling latest updates from GitHub..."
+    pkg install python
+    pkg install setuptools==65.5.0
     git pull origin main
 
     echo "Installing Python packages..."
