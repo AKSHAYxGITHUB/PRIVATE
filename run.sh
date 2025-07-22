@@ -1,12 +1,13 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # Detect platform
 if [[ "$OSTYPE" == "msys" || "$OSTYPE" == "win32" ]]; then
     echo "Running on Windows CMD"
     cmd.exe /c run.bat
 else
-    echo "Running on Linux/Termux"
-    # Replace this with your actual Unix commands
-    chmod +x script.sh
-    ./script.sh
+    echo "Running on Termux/Linux"
+    git pull origin main
+    pip install -r requirements.txt
+    python main.py
 fi
+
